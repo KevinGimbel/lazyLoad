@@ -30,7 +30,7 @@ Default Usage:
 
 LazyLoad will load the images in the example above by replacing the `src` Attribute when the image is inside the viewport. That's it. You can also pass in some options before calling the `init` function.
 
-```html
+```js
 // these are default values
 var options = {
   parent: '.lazyload',
@@ -44,15 +44,14 @@ var another_slowpoke = new LazyLoad(options).init();
 
 Here's another example of lazy loading iFrames that are used to embed SoundCloud Tracks.
 
-```
-// JS
+```js
 var soundcloud_options = {
   childs: 'iframe',
   parent: '.playlist'
 }
 var soundcloud_slowpoke = new LazyLoad(options).init();
-
-// HTML
+```
+```html
 <div class="playlist">
 <iframe width="100%" height="450" scrolling="no" frameborder="no" src="" data-src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/186211537&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
 
