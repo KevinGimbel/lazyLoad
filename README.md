@@ -49,7 +49,7 @@ var soundcloud_options = {
   childs: 'iframe',
   parent: '.playlist'
 }
-var soundcloud_slowpoke = new LazyLoad(options).init();
+var soundcloud_slowpoke = new LazyLoad(soundcloud_options).init();
 ```
 ```html
 <div class="playlist">
